@@ -7,7 +7,7 @@
   <meta name="description" content="Original illustration and premium home decor for your home on wheels. Shop canvas prints, fleece blankets, throw pillows, and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Lato:wght@300;400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet" />
   <meta name="p:domain_verify" content="54f55bf62de48828fc21edeabb1e5721"/>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -19,12 +19,25 @@
       <a href="/" class="nav-logo-link" aria-label="Wrenmark Studio — home">
         <img src="images/logo.png" alt="Wrenmark Studio" class="nav-logo" width="240" height="72" />
       </a>
-      <a
-        href="https://wrenmarkstudio.etsy.com"
-        class="nav-etsy-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >Shop on Etsy</a>
+      <div class="nav-right">
+        <a
+          href="https://wrenmarkstudio.etsy.com"
+          class="nav-etsy-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Shop on Etsy</a>
+        <a
+          href="https://www.pinterest.com/WrenmarkStudio"
+          class="nav-pinterest-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Wrenmark Studio on Pinterest"
+        >
+          <svg class="nav-pinterest-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
+          </svg>
+        </a>
+      </div>
     </div>
   </nav>
 
@@ -49,6 +62,66 @@
         target="_blank"
         rel="noopener noreferrer"
       >Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Lifestyle Image Strip -->
+  <section class="lifestyle-strip" aria-label="Lifestyle photography">
+    <div class="lifestyle-strip__grid">
+      <div class="lifestyle-strip__item">
+        <img src="images/lifestyle-1.jpg" alt="Wrenmark Studio — cozy camper interior detail" class="lifestyle-strip__img" loading="lazy" />
+      </div>
+      <div class="lifestyle-strip__item">
+        <img src="images/lifestyle-2.jpg" alt="Wrenmark Studio — RV home styling" class="lifestyle-strip__img" loading="lazy" />
+      </div>
+      <div class="lifestyle-strip__item">
+        <img src="images/lifestyle-3.jpg" alt="Wrenmark Studio — camper decor lifestyle" class="lifestyle-strip__img" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Values Bar -->
+  <section class="values-bar" aria-label="Brand values">
+    <div class="values-bar__inner">
+
+      <a href="#" class="values-bar__col" aria-label="Original Illustration — Every design is created by hand, not generated, not generic">
+        <span class="values-bar__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 34 C20 34 8 26 8 16 C8 9 13 6 20 6 C27 6 32 9 32 16 C32 26 20 34 20 34Z"/>
+            <line x1="20" y1="34" x2="20" y2="16"/>
+            <path d="M20 22 C17 19 14 18 12 18"/>
+            <path d="M20 26 C23 23 26 22 28 22"/>
+          </svg>
+        </span>
+        <span class="values-bar__label">Original Illustration</span>
+        <span class="values-bar__sub">Every design is created by hand — not generated, not generic.</span>
+      </a>
+
+      <a href="#" class="values-bar__col" aria-label="Made for Your Journey — Cozy camper decor designed around the life you actually live">
+        <span class="values-bar__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="20" cy="20" r="13"/>
+            <circle cx="20" cy="20" r="1.5" fill="#C9A84C"/>
+            <polygon points="20,10 22.5,19 20,23 17.5,19" fill="#C9A84C" fill-opacity="0.25" stroke="#C9A84C"/>
+            <polygon points="20,30 22.5,21 20,23 17.5,21" fill="none" stroke="#C9A84C"/>
+          </svg>
+        </span>
+        <span class="values-bar__label">Made for Your Journey</span>
+        <span class="values-bar__sub">Cozy camper decor designed around the life you actually live.</span>
+      </a>
+
+      <a href="#" class="values-bar__col" aria-label="Cohesive by Design — Everything coordinates so your space feels designed, not assembled">
+        <span class="values-bar__icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M7 21 L20 9 L33 21"/>
+            <path d="M11 18 L11 33 L29 33 L29 18"/>
+            <rect x="16" y="24" width="8" height="9" rx="1"/>
+          </svg>
+        </span>
+        <span class="values-bar__label">Cohesive by Design</span>
+        <span class="values-bar__sub">Everything coordinates — so your space feels designed, not assembled.</span>
+      </a>
+
     </div>
   </section>
 
