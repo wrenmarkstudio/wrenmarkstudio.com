@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wrenmark Studio — Beautiful Wherever You Park</title>
-  <meta name="description" content="Original illustration and premium home decor for your home on wheels. Shop canvas prints, fleece blankets, throw pillows, and more from Wrenmark Studio." />
+  <title>Wrenmark Studio — Cozy Has No Address.</title>
+  <meta name="description" content="Original illustration and premium home decor for your home on wheels. Shop canvas prints, fleece blankets, throw pillows, and more." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
@@ -12,103 +12,92 @@
 </head>
 <body>
 
-  <!-- ── Navigation ─────────────────────────────────────────── -->
-  <header class="nav" id="nav" role="banner">
-    <div class="nav__inner">
-      <a href="/" class="nav__logo-link" aria-label="Wrenmark Studio — home">
-        <img
-          src="images/logo.png"
-          alt="Wrenmark Studio"
-          class="nav__logo"
-          width="240"
-          height="72"
-        />
+  <!-- Navigation -->
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo-link" aria-label="Wrenmark Studio — home">
+        <img src="images/logo.png" alt="Wrenmark Studio" class="nav-logo" width="240" height="72" />
       </a>
-      <nav aria-label="Main">
-        <a
-          href="https://wrenmarkstudio.etsy.com"
-          class="nav__cta"
-          target="_blank"
-          rel="noopener noreferrer"
-        >Shop on Etsy</a>
-      </nav>
+      <a
+        href="https://wrenmarkstudio.etsy.com"
+        class="nav-etsy-link"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Shop on Etsy</a>
     </div>
-  </header>
+  </nav>
 
-  <!-- ── Hero ───────────────────────────────────────────────── -->
-  <main>
-    <section class="hero" aria-label="Welcome">
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="hero-image-wrap">
+      <img
+        src="images/hero.png"
+        alt="Warm golden Airstream bedroom interior — cozy textiles, soft light, home on wheels"
+        class="hero-image"
+        fetchpriority="high"
+      />
+      <div class="hero-overlay" aria-hidden="true"></div>
+    </div>
 
-      <div class="hero__media" aria-hidden="true">
-        <img
-          src="images/hero.png"
-          alt=""
-          class="hero__image"
-          fetchpriority="high"
-          draggable="false"
-        />
-        <div class="hero__veil"></div>
-      </div>
+    <div class="hero-content">
+      <p class="hero-tagline">Beautiful Wherever You Park</p>
+      <p class="hero-support">Original illustration and premium home decor for your home on wheels.</p>
+      <a
+        href="https://wrenmarkstudio.etsy.com"
+        class="hero-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+      >Shop the Collection</a>
+    </div>
+  </section>
 
-      <div class="hero__body">
-        <span class="hero__rule" aria-hidden="true"></span>
-        <h1 class="hero__tagline">Beautiful Wherever You Park</h1>
-        <p class="hero__support">
-          Original illustration and premium home decor<br class="hero__br"> for your home on wheels.
-        </p>
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="footer-inner">
+      <div class="footer-icons" role="list">
+
+        <!-- Etsy text link -->
         <a
           href="https://wrenmarkstudio.etsy.com"
-          class="hero__btn"
+          class="footer-icon-link footer-text-link"
           target="_blank"
           rel="noopener noreferrer"
-        >Shop the Collection</a>
-      </div>
-
-    </section>
-  </main>
-
-  <!-- ── Footer ─────────────────────────────────────────────── -->
-  <footer class="footer" role="contentinfo">
-    <div class="footer__inner">
-
-      <nav class="footer__links" aria-label="Social links">
-        <a
-          href="https://wrenmarkstudio.etsy.com"
-          class="footer__link"
-          target="_blank"
-          rel="noopener noreferrer"
+          aria-label="Wrenmark Studio on Etsy"
+          role="listitem"
         >Etsy</a>
 
-        <span class="footer__divider" aria-hidden="true">·</span>
-
-        <!-- Pinterest SVG icon -->
+        <!-- Pinterest icon -->
         <a
           href="https://www.pinterest.com/wrenmarkstudio/"
-          class="footer__link footer__link--icon"
+          class="footer-icon-link"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Wrenmark Studio on Pinterest"
+          role="listitem"
         >
-          <svg viewBox="0 0 24 24" fill="currentColor" class="footer__pinterest" aria-hidden="true" focusable="false">
+          <svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
             <path d="M12 0C5.373 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 0 1 .083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/>
           </svg>
         </a>
-      </nav>
 
-      <p class="footer__copy">
-        &copy; 2026 Wrenmark Studio. All rights reserved.
-      </p>
+      </div>
 
+      <p class="footer-copy">&copy; 2026 Wrenmark Studio. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
     (function () {
-      var nav = document.getElementById('nav');
-      function tick() {
-        nav.classList.toggle('nav--scrolled', window.scrollY > 48);
+      var nav = document.getElementById('site-nav');
+      var threshold = 60;
+      function onScroll() {
+        if (window.scrollY > threshold) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
       }
-      window.addEventListener('scroll', tick, { passive: true });
+      window.addEventListener('scroll', onScroll, { passive: true });
     }());
   </script>
 
