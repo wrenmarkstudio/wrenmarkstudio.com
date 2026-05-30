@@ -72,7 +72,7 @@ a {
 }
 
 .nav-logo {
-  height: 52px;
+  height: 120px;
   width: auto;
   object-fit: contain;
 }
@@ -236,10 +236,11 @@ a {
   justify-content: center;
   color: #F5E6D3;
   opacity: 0.7;
-  transition: opacity 200ms ease, color 200ms ease;
+  transition: opacity 200ms ease, color 200ms ease, border-color 200ms ease;
   cursor: pointer;
   padding: 6px;
   border-radius: 4px;
+  border-bottom: 1px solid transparent;
   min-width: 44px;
   min-height: 44px;
 }
@@ -248,6 +249,7 @@ a {
 .footer-icon-link:focus-visible {
   opacity: 1;
   color: #C9A84C;
+  border-bottom-color: currentColor;
 }
 
 .footer-icon-link:focus-visible {
@@ -259,6 +261,15 @@ a {
   width: 22px;
   height: 22px;
   flex-shrink: 0;
+}
+
+.footer-text-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  border-bottom: 1px solid transparent;
+  transition: opacity 200ms ease, color 200ms ease, border-color 200ms ease;
 }
 
 .footer-copy {
@@ -281,7 +292,7 @@ a {
   }
 
   .nav-logo {
-    height: 40px;
+    height: 80px;
   }
 
   .hero-cta {
@@ -302,7 +313,7 @@ a {
   }
 
   .nav-logo {
-    height: 32px;
+    height: 80px;
   }
 
   .nav-etsy-link {
